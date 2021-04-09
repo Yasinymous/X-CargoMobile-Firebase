@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="125dp">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" tools:srcCompat="@drawable/loginlogo1"
+                android:id="@+id/loginlogo2" android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:layout_above="@+id/login_pagebtn"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:src="@drawable/loginlogo1"
+                android:layout_marginTop="30dp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/sign_username" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp" android:hint="Username"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/sign_pass" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp" android:hint="Password"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/sign_pass2" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp" android:hint="Password Again"/>
+            <Button
+                    android:text="SIGN UP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/signup_btn" android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
