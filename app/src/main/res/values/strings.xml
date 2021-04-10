@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">XcargoMobile</string>
+
+    <string name="homet">Home Fragment</string>
+    <string name="searchcargo">Sport Fragment</string>
+    <string name="profile">Movie Fragment</string>
+    <string name="hello_blank_fragment"/>
 </resources>

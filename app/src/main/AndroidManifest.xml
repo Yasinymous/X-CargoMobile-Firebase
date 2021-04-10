@@ -33,7 +33,43 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".userscreen.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN"/>
 
-    </application>
+                <category android:name="android.intent.category.LOGIN"/>
+            </intent-filter>
+        </activity>
 
-</manifest>
+        <!--
+          <activity android:name=".userscreen.Profile">
+              <intent-filter>
+                  <action android:name="android.intent.action.LOGIN"/>
+
+                  <category android:name="android.intent.category.LOGIN"/>
+              </intent-filter>
+          </activity>
+
+          <activity android:name=".userscreen.Searchcargo">
+              <intent-filter>
+                  <action android:name="android.intent.action.LOGIN"/>
+
+                  <category android:name="android.intent.category.LOGIN"/>
+              </intent-filter>
+          </activity>
+        -->
+
+
+          <activity android:name=".userscreen.Cargoinfo">
+              <intent-filter>
+                  <action android:name="android.intent.action.LOGIN"/>
+
+                  <category android:name="android.intent.category.LOGIN"/>
+              </intent-filter>
+          </activity>
+
+
+
+      </application>
+
+  </manifest>
