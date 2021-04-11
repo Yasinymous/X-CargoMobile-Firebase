@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_marginTop="20dp">
+                    <TextView
+                            android:text="Sender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView22"
+                            android:layout_marginStart="30dp" android:textSize="24sp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_marginTop="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView16"
+                                android:layout_marginStart="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/sendername" android:layout_marginStart="30dp" android:hint="Name"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Last Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView17"
+                                android:layout_marginEnd="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/senderlastname" android:layout_marginEnd="30dp"
+                                android:hint="Last Name"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_marginTop="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Adress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView18"
+                                android:layout_marginStart="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/senderadress" android:layout_marginStart="30dp" android:hint="Adress"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Province"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView19"
+                                android:layout_marginEnd="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/senderprovince" android:layout_marginEnd="30dp" android:hint="Province"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_marginTop="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Distric"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView20"
+                                android:layout_marginStart="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/senderdistric" android:layout_marginStart="30dp" android:hint="Distric"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_marginTop="20dp">
+                    <TextView
+                            android:text="Receiver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView23" android:textSize="24sp"
+                            android:layout_marginStart="30dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_marginTop="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView9"
+                                android:layout_marginStart="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/receivername" android:layout_marginStart="30dp" android:hint="Name"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Last Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView15"
+                                android:layout_marginEnd="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/receiverlastname" android:layout_marginEnd="30dp"
+                                android:hint="Last Name"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Adress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView11"
+                                android:layout_marginStart="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/receiveradress" android:layout_marginStart="30dp" android:hint="Adress"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Province"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView12"
+                                android:layout_marginEnd="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/receiverprovince" android:layout_marginEnd="30dp"
+                                android:hint="Province"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Distric"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView14"
+                                android:layout_marginStart="30dp" android:ems="8"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/receiverdistric" android:layout_marginStart="30dp"
+                                android:hint="Distric"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_marginBottom="40dp">
+
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_marginTop="20dp">
+                    <TextView
+                            android:text="Information"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView24" android:textSize="24sp"
+                            android:layout_marginStart="30dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_marginTop="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:layout_height="wrap_content" android:id="@+id/textView25"
+                                android:layout_marginStart="30dp" android:ems="8" android:text="Length"
+                                android:layout_width="wrap_content"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/length" android:hint="Length" android:layout_marginStart="30dp"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Width"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/textView26"
+                                android:layout_marginEnd="30dp" android:ems="8" android:layout_height="wrap_content"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/width" android:hint="Width" android:layout_marginEnd="30dp"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_marginTop="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Height"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView29"
+                                android:layout_marginStart="30dp"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/height" android:hint="Height" android:layout_marginStart="30dp"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/textView27"
+                                android:layout_marginEnd="30dp"/>
+                        <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="8"
+                                android:id="@+id/price" android:layout_marginEnd="30dp"
+                                android:focusable="false"
+                                android:clickable="false"
+                                android:cursorVisible="false" android:hint="Price"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

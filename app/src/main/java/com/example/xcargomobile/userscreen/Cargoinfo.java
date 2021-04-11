@@ -18,5 +18,5 @@ public class Cargoinfo extends AppCompatActivity {
         setContentView(R.layout.usercargoinfo);
 
     }
-    
+
 }

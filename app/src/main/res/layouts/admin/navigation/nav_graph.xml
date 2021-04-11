@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/addcargosender2">
+
+
+    <fragment
+            android:id="@+id/addcargosender2"
+            android:name="com.example.xcargomobile.admin.Addcargosender"
+            android:label="senderinfo"
+            tools:layout="@layout/senderinfo">
+        <action
+                android:id="@+id/action_addcargosender2_to_addcargoreceiver2"
+                app:destination="@id/addcargoreceiver2"/>
+    </fragment>
+    <fragment
+            android:id="@+id/addcargoreceiver2"
+            android:name="com.example.xcargomobile.admin.Addcargoreceiver"
+            android:label="receiverinfo"
+            tools:layout="@layout/receiverinfo" >
+        <action
+                android:id="@+id/action_addcargoreceiver2_to_addcargoinfo"
+                app:destination="@id/addcargoinfo"/>
+    </fragment>
+    <fragment
+            android:id="@+id/addcargoinfo"
+            android:name="com.example.xcargomobile.admin.Addcargoinfo"
+            android:label="cargoinfo"
+            tools:layout="@layout/cargoinfo">
+        <action android:id="@+id/action_addcargoinfo_to_home2" app:destination="@id/home2"/>
+    </fragment>
+    <activity android:id="@+id/home2"
+              android:name="com.example.xcargomobile.fragment.Home"
+              android:label="Home"
+                tools:layout="@layout/addcargohome"/>
+</navigation>

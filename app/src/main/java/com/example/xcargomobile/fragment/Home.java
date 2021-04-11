@@ -1,4 +1,4 @@
-package com.example.xcargomobile.userscreen;
+package com.example.xcargomobile.fragment;
 
 
 
@@ -22,26 +22,32 @@ public class Home extends AppCompatActivity{
     TabLayout tabLayout;
     ViewPager viewPager;
     ViewPagerAdapter viewPagerAdapter;
+    AdminViewPagerAdapter adminviewPagerAdapter;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
-
         viewPager = findViewById(R.id.viewPager);
         tabLayout = findViewById(R.id.tabLayout);
 
-        viewPagerAdapter = new ViewPagerAdapter(
-                getSupportFragmentManager());
-        viewPager.setAdapter(viewPagerAdapter);
+        if(false){
+            viewPagerAdapter = new ViewPagerAdapter(
+                    getSupportFragmentManager());
+            viewPager.setAdapter(viewPagerAdapter);
 
-        // It is used to join TabLayout with ViewPager.
-        tabLayout.setupWithViewPager(viewPager);
+            tabLayout.setupWithViewPager(viewPager);
+        }
+        else{
+            adminviewPagerAdapter = new AdminViewPagerAdapter(
+                    getSupportFragmentManager());
+            viewPager.setAdapter(adminviewPagerAdapter);
+
+            tabLayout.setupWithViewPager(viewPager);
+        }
     }
-
-
-
-
+    
 }
 

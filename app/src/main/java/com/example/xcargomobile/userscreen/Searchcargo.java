@@ -18,14 +18,12 @@ import com.example.xcargomobile.userscreen.Cargoinfo;
 
 public class Searchcargo extends Fragment {
 
-
     View myView;
     Button search_button;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.searchcargo, container,false);
-
 
         Button search_button = (Button) root.findViewById(R.id.search_button);
         search_button.setOnClickListener(new View.OnClickListener() {

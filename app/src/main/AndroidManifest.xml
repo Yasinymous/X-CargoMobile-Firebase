@@ -33,13 +33,22 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".userscreen.Home">
+        <activity android:name=".fragment.Home">
             <intent-filter>
                 <action android:name="android.intent.action.LOGIN"/>
 
                 <category android:name="android.intent.category.LOGIN"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".admin.Addcargo">
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN"/>
+
+                <category android:name="android.intent.category.LOGIN"/>
+            </intent-filter>
+        </activity>
+
 
         <!--
           <activity android:name=".userscreen.Profile">

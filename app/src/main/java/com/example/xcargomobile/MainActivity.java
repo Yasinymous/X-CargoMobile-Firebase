@@ -8,7 +8,7 @@ import android.content.Intent;
 
 import com.example.xcargomobile.login_signup.Login;
 import com.example.xcargomobile.login_signup.Signup;
-import com.example.xcargomobile.userscreen.Home;
+import com.example.xcargomobile.fragment.Home;
 
 
 public class MainActivity extends AppCompatActivity {
