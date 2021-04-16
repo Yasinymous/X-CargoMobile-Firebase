@@ -9,11 +9,12 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
+    >
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" tools:srcCompat="@drawable/loginlogo1"
@@ -32,7 +33,7 @@
                     android:layout_height="65dp"
                     android:inputType="textEmailAddress"
                     android:ems="10"
-                    android:id="@+id/login_username"
+                    android:id="@+id/login_mail"
                     android:hint="Username"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="30dp" android:layout_marginBottom="0dp"
@@ -61,16 +62,53 @@
                 <Button
                         android:text="Forgot my password"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/button4" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/passreset_btn" android:layout_weight="1"
                         style="@style/Widget.AppCompat.Button"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
             </LinearLayout>
             <Button
-                    android:text="LOGIN"
+                    android:text="Login"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/login_btn" android:layout_weight="1"
-                    android:layout_marginTop="20dp" android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp" android:textAllCaps="false"/>
+                    android:layout_height="wrap_content" android:id="@+id/login_btn" android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"/>
+            <TextView
+                    android:id="@+id/createText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="New Here ?  Create Account"
+                    android:textColor="#FFEB3B"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loginBtn" android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+            <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/createText"
+                    app:layout_constraintVertical_bias="0.39" android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"/>
+            <TextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password ?"
+                    android:textColor="#FDD835"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/progressBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/createText"
+                    app:layout_constraintVertical_bias="0.19999999" android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"/>
         </LinearLayout>
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

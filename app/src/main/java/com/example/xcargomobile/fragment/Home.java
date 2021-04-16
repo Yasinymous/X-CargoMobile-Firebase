@@ -33,7 +33,7 @@ public class Home extends AppCompatActivity{
         viewPager = findViewById(R.id.viewPager);
         tabLayout = findViewById(R.id.tabLayout);
 
-        if(false){
+        if(true){
             viewPagerAdapter = new ViewPagerAdapter(
                     getSupportFragmentManager());
             viewPager.setAdapter(viewPagerAdapter);

@@ -11,7 +11,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="125dp">
+    >
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" tools:srcCompat="@drawable/loginlogo1"
@@ -31,8 +31,22 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
-                    android:id="@+id/sign_username" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
-                    android:layout_marginTop="20dp" android:hint="Username"/>
+                    android:id="@+id/sign_name" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp" android:hint="Name"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/sign_lastname" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp" android:hint="Last Name"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/sign_mail" android:hint="E-mail" android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"/>
             <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -52,6 +66,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/signup_btn" android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp" android:layout_marginTop="20dp" android:textAllCaps="false"/>
+            <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar" android:layout_marginTop="20dp" android:visibility="invisible"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

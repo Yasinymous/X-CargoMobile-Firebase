@@ -1,14 +1,13 @@
 package com.example.xcargomobile;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.Button;
-import android.view.View;
 import android.content.Intent;
-
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
 import com.example.xcargomobile.login_signup.Login;
 import com.example.xcargomobile.login_signup.Signup;
-import com.example.xcargomobile.fragment.Home;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     Button login_pagebtn;
     Button signup_pagebtn;
     Button user_pagebtn;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,19 +46,14 @@ public class MainActivity extends AppCompatActivity {
         user_pagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Home.class);
-                startActivity(intent);
-            }
+                    FirebaseAuth.getInstance().signOut();//logout
+                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
         });
 
     }
 
-   /* public void onClick(View v){
-            Intent intent = new Intent(MainActivity.this,Login.class);
-            startActivity(intent);
-            System.out.println("tıkladın");
-        }
-*/
 }
 
 

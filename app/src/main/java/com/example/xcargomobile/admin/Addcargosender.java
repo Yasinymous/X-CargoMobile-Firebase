@@ -31,12 +31,9 @@ public class Addcargosender extends Fragment {
         View view =inflater.inflate(R.layout.senderinfo,container,false);
         Button nextreceiver =(Button) view.findViewById(R.id.nextreceiver);
         final NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-        System.out.println("button");
-        System.out.println(nextreceiver);
         nextreceiver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("test");
                 //navigate metodu ile nav_graph.xml dosyasındaki hangi action kullanacağını belirterek, geçiş yapacağı fragment bilgisini veriyoruz
                 navController.navigate(R.id.action_addcargosender2_to_addcargoreceiver2);
             }

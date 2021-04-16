@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import com.example.xcargomobile.admin.Adminhome;
+import com.example.xcargomobile.admin.Searchcargolist;
 import com.example.xcargomobile.userscreen.Searchcargo;
 import com.example.xcargomobile.userscreen.Profile;
 
@@ -27,7 +28,7 @@ public class AdminViewPagerAdapter
         if (position == 0)
             fragment = new Adminhome();
         else if (position == 1)
-            fragment = new Searchcargo();
+            fragment = new Searchcargolist();
         else if (position == 2)
             fragment = new Profile();
 

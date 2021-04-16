@@ -1,0 +1,11 @@
+
+Your data is private by default. Client read/write access will only be granted as specified by your security rules.
+
+Start in test mode
+Your data is open by default to enable quick setup. However, you must update your security rules within 30 days to enable long-term client read/write access.
+{
+"rules": {
+".read": "now < 1620939600000",  // 2021-5-14
+".write": "now < 1620939600000",  // 2021-5-14
+}
+}
