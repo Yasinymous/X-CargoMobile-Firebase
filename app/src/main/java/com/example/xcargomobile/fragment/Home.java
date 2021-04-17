@@ -2,20 +2,11 @@ package com.example.xcargomobile.fragment;
 
 
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 import com.example.xcargomobile.R;
-import com.example.xcargomobile.fragment.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayoutMediator;
-
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Home extends AppCompatActivity{
 
@@ -33,7 +24,7 @@ public class Home extends AppCompatActivity{
         viewPager = findViewById(R.id.viewPager);
         tabLayout = findViewById(R.id.tabLayout);
 
-        if(true){
+        if(false){
             viewPagerAdapter = new ViewPagerAdapter(
                     getSupportFragmentManager());
             viewPager.setAdapter(viewPagerAdapter);

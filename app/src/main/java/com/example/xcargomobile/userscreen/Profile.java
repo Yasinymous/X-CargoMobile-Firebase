@@ -11,9 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.xcargomobile.R;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -92,7 +94,15 @@ public class Profile extends Fragment {
                     imageUri = Uri.parse(user_image);
 
                     RequestOptions requestOptions = new RequestOptions();
-                    requestOptions.placeholder(R.drawable.ff_musk4_f_2);
+                    requestOptions.placeholder(R.drawable.avatar);
+                    StorageReference dateRef = storageReference.child("image/" + userID+ ".jpg");
+                    dateRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri downloadUrl) {
+                            Glide.with(getActivity()).setDefaultRequestOptions(requestOptions).load(downloadUrl).into(profile_image);
+                        }
+
+                    });
 
                     //Glide.with(getActivity()).setDefaultRequestOptions(requestOptions).load(imageUri).into(profile_image);
                     profile_fullnametext.setText(full_name);

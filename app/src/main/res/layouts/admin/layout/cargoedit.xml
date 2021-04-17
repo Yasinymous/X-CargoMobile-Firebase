@@ -266,7 +266,7 @@
                         <EditText
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:inputType="textPersonName"
+                                android:inputType="numberSigned|number|numberDecimal"
                                 android:ems="8"
                                 android:id="@+id/length" android:hint="Length" android:layout_marginStart="30dp"
                         />
@@ -283,7 +283,7 @@
                         <EditText
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:inputType="textPersonName"
+                                android:inputType="numberSigned|number|numberDecimal"
                                 android:ems="8"
                                 android:id="@+id/width" android:hint="Width" android:layout_marginEnd="30dp"
                         />
@@ -303,7 +303,7 @@
                         <EditText
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:inputType="textPersonName"
+                                android:inputType="numberSigned|number|numberDecimal"
                                 android:ems="8"
                                 android:id="@+id/height" android:hint="Height" android:layout_marginStart="30dp"
                         />
@@ -320,7 +320,7 @@
                         <EditText
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:inputType="textPersonName"
+                                android:inputType="numberSigned|number|numberDecimal"
                                 android:ems="8"
                                 android:id="@+id/price" android:layout_marginEnd="30dp"
                                 android:hint="Price"/>

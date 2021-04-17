@@ -7,8 +7,7 @@ public class Information {
     private double Height;
     private double Price;
 
-    public Information() {
-    }
+
     public Information(double length, double width, double height, double price) {
         Length = length;
         Width = width;

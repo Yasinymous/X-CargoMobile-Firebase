@@ -35,7 +35,7 @@
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:ems="8"
                         android:id="@+id/addlength" android:hint="Length"/>
             </LinearLayout>
@@ -51,7 +51,7 @@
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:ems="8"
                         android:id="@+id/addwidth" android:hint="Width"/>
             </LinearLayout>
@@ -70,7 +70,7 @@
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:ems="8"
                         android:id="@+id/addheight" android:hint="Height"/>
             </LinearLayout>
@@ -86,7 +86,7 @@
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:ems="8"
                         android:id="@+id/addprice" android:hint="Price"/>
             </LinearLayout>

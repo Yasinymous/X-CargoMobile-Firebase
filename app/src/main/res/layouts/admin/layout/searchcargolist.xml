@@ -34,9 +34,8 @@
                     android:layout_marginEnd="30dp" android:textAllCaps="false"/>
             <ListView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/cargolist" android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"
-                    android:entries="@array/categories"/>
+                    android:layout_height="446dp" android:id="@+id/cargolist" android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

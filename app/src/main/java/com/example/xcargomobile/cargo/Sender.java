@@ -8,8 +8,7 @@ public class Sender {
     private String District;
     private String Province;
 
-    public Sender() {
-    }
+
     public Sender(String name, String lastName, String address, String district, String province) {
         Name = name;
         LastName = lastName;
