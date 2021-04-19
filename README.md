@@ -1,4 +1,4 @@
-**Python Mail Verification**
+**Java Android and Firebase**
 
 - Java Firebase and android project
 
