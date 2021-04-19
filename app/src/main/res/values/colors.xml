@@ -15,4 +15,8 @@
     <color name="green_300">#57BB8A</color>
     <color name="green_500">#673AB7</color>
     <color name="green_700">#0B8043</color>
+    <color name="maincolor">#0b4f78</color>
+    <color name="maincolorv1">#fe7e00</color>
+    <color name="white">#fff</color>
+
 </resources>

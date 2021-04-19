@@ -1,16 +1,15 @@
 package com.example.xcargomobile.login_signup;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import com.example.xcargomobile.MainActivity;
 import com.example.xcargomobile.R;
 import com.example.xcargomobile.fragment.Home;
@@ -18,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -31,7 +31,7 @@ import java.util.Map;
 
 public class Signup extends AppCompatActivity {
     public static final String TAG = "TAG";
-    private EditText sign_name, sign_lastname, sign_mail, sign_pass, sign_pass2;
+    private TextInputEditText sign_name, sign_lastname, sign_mail, sign_pass, sign_pass2;
     private Button signup_btn;
     private ProgressBar progressBar;
     private FirebaseAuth fAuth;
@@ -105,6 +105,7 @@ public class Signup extends AppCompatActivity {
                             user.put("lastname",lastname);
                             user.put("image","default");
                             user.put("email",email);
+                            user.put("status",0);
                             Toast.makeText(Signup.this, "User Created.", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Signup.this,Home.class);
                             startActivity(intent);

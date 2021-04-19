@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -22,8 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Login extends AppCompatActivity {
 
-
-    EditText login_mail, login_pass;
+    TextInputEditText login_mail, login_pass;
     Button login_btn, passreset_btn;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        login_mail = findViewById(R.id.login_mail);
+        login_mail =  findViewById(R.id.login_mail);
         login_pass = findViewById(R.id.login_pass);
         progressBar = findViewById(R.id.progressBar);
         fAuth = FirebaseAuth.getInstance();
@@ -82,7 +82,6 @@ public class Login extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), Home.class));
                         }else {
                             Toast.makeText(Login.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.GONE);
                         }
 
                     }

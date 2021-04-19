@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.xcargomobile.fragment.Home;
 import com.example.xcargomobile.login_signup.Login;
 import com.example.xcargomobile.login_signup.Signup;
 import com.google.firebase.auth.FirebaseAuth;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button signup_pagebtn;
     Button user_pagebtn;
 
-
+    FirebaseAuth fAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,13 @@ public class MainActivity extends AppCompatActivity {
         login_pagebtn = (Button)findViewById(R.id.login_pagebtn);
         signup_pagebtn = (Button)findViewById(R.id.signup_pagebtn);
 
-        user_pagebtn = (Button)findViewById(R.id.user_pagebtn);
+        fAuth = FirebaseAuth.getInstance();
+       //user_pagebtn = (Button)findViewById(R.id.user_pagebtn);
+
+        if(fAuth.getCurrentUser() != null){
+            startActivity(new Intent(MainActivity.this, Home.class));
+            finish();
+        }
 
         login_pagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,15 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Signup.class);
                 startActivity(intent);
             }
-        });
-
-        user_pagebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    FirebaseAuth.getInstance().signOut();//logout
-                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                    startActivity(intent);
-                }
         });
 
     }

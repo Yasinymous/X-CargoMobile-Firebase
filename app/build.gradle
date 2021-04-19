@@ -43,6 +43,8 @@ dependencies {
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
+    implementation 'com.google.android.material:material:<version>'
+
     implementation platform('com.google.firebase:firebase-bom:27.0.0')
     // Declare the dependency for the Cloud Firestore library
     // When using the BoM, you don't specify versions in Firebase library dependencies

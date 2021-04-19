@@ -15,69 +15,101 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
     >
+
+
         <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" tools:srcCompat="@drawable/loginlogo1"
-                android:id="@+id/loginlogo" android:layout_marginTop="30dp" android:adjustViewBounds="false"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp" android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:layout_above="@+id/login_btn"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentTop="false"
-                android:src="@drawable/loginlogo1"/>
+                android:src="@drawable/layer_1">
+
+        </ImageView>
+
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            <EditText
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                    app:startIconDrawable="@drawable/email"
                     android:layout_width="match_parent"
-                    android:layout_height="65dp"
-                    android:inputType="textEmailAddress"
-                    android:ems="10"
-                    android:id="@+id/login_mail"
-                    android:hint="Username"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginStart="30dp" android:layout_marginBottom="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="30dp"
-            />
-            <EditText
+                    android:hint="E-mail"
+                    app:hintTextColor="@color/maincolor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/maincolorv1">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/login_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                     />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:startIconDrawable="@drawable/lock_black_24dp"
                     android:layout_width="match_parent"
-                    android:layout_height="65dp"
-                    android:inputType="textPassword"
-                    android:ems="10"
-                    android:id="@+id/login_pass"
-                    android:hint="Password" android:layout_marginStart="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_marginTop="20dp"
-            />
+                    android:hint="Password"
+                    app:hintTextColor="@color/maincolor"
+                    app:boxStrokeColor="@color/maincolorv1">
+
+
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/login_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                      />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_height="wrap_content" android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
-                    android:layout_marginStart="30dp" android:layout_marginEnd="30dp">
-                <CheckBox
-                        android:text="CheckBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/checkBox" android:layout_weight="1"/>
-                <Button
-                        android:text="Forgot my password"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/passreset_btn" android:layout_weight="1"
-                        style="@style/Widget.AppCompat.Button"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
-            </LinearLayout>
-            <Button
-                    android:text="Login"
+                    android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+            <com.google.android.material.button.MaterialButton
+                    android:text="Log in"
+                    tools:textAllCaps="false"
+                    app:cornerRadius="20dp"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    app:icon="@drawable/login_black_24dp"
+                    app:iconGravity="start"
+                    tools:textSize="20sp"
+                    app:iconTint="@color/white"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/maincolorv1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/login_btn" android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"/>
+                    android:layout_height="50dp" android:id="@+id/login_btn" android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp" android:layout_marginTop="5dp"/>
             <TextView
                     android:id="@+id/createText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:text="New Here ?  Create Account"
-                    android:textColor="#FFEB3B"
+                    android:textColor="#3F51B5"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/loginBtn" android:layout_marginStart="30dp"
@@ -99,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Forgot Password ?"
-                    android:textColor="#FDD835"
+                    android:textColor="#3F51B5"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/progressBar"
                     app:layout_constraintEnd_toEndOf="parent"

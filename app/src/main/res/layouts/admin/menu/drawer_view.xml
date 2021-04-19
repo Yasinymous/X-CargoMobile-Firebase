@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         tools:context="com.example.xcargomobile.userscreen.Profile">
 
-    <item android:title="settings" android:id="@+id/settings"/>
+    <item android:title="Settings" android:id="@+id/settings"/>
     <item android:title="Logout" android:id="@+id/logout"/>
 
 </menu>

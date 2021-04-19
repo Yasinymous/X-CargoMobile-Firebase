@@ -14,58 +14,143 @@
     >
         <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" tools:srcCompat="@drawable/loginlogo1"
+                android:layout_height="200dp"
                 android:id="@+id/loginlogo2" android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:layout_above="@+id/login_pagebtn"
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentTop="false"
-                android:src="@drawable/loginlogo1"
+                android:src="@drawable/_layer_"
                 android:layout_marginTop="30dp"/>
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            <EditText
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    app:startIconDrawable="@drawable/chevron_right_black_24dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/sign_name" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
-                    android:layout_marginTop="20dp" android:hint="Name"/>
-            <EditText
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:hint="First Name"
+                    app:hintTextColor="@color/maincolor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/maincolorv1">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sign_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                    app:startIconDrawable="@drawable/chevron_right_black_24dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:id="@+id/sign_lastname" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
-                    android:layout_marginTop="20dp" android:hint="Last Name"/>
-            <EditText
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:hint="Last Name"
+                    app:hintTextColor="@color/maincolor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/maincolorv1">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sign_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                    app:startIconDrawable="@drawable/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    android:ems="10"
-                    android:id="@+id/sign_mail" android:hint="E-mail" android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp"/>
-            <EditText
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:hint="E-mail"
+                    app:hintTextColor="@color/maincolor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/maincolorv1">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sign_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                    app:startIconDrawable="@drawable/lock_black_24dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:ems="10"
-                    android:id="@+id/sign_pass" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
-                    android:layout_marginTop="20dp" android:hint="Password"/>
-            <EditText
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:hint="Password"
+                    app:hintTextColor="@color/maincolor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/maincolorv1">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sign_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                    app:startIconDrawable="@drawable/lock_black_24dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:ems="10"
-                    android:id="@+id/sign_pass2" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
-                    android:layout_marginTop="20dp" android:hint="Password Again"/>
-            <Button
-                    android:text="SIGN UP"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:hint="Password Again"
+                    app:hintTextColor="@color/maincolor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/maincolorv1">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sign_pass2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                    android:text="Sign in"
+                    tools:textAllCaps="false"
+                    app:cornerRadius="20dp"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    app:icon="@drawable/app_registration_white_24dp"
+                    app:iconGravity="start"
+                    tools:textSize="20sp"
+                    app:iconTint="@color/white"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/maincolorv1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/signup_btn" android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp" android:layout_marginTop="20dp" android:textAllCaps="false"/>
+                    android:layout_height="50dp" android:id="@+id/signup_btn" android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp" android:layout_marginTop="5dp"/>
+
             <ProgressBar
                     style="?android:attr/progressBarStyle"
                     android:layout_width="match_parent"

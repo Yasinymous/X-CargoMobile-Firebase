@@ -148,7 +148,9 @@ public class Addcargoinfo extends Fragment {
                 documentReference.set(cargo).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "onSuccess: user Profile is created for "+ userID);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("status","success");
+                        navController.navigate(R.id.action_addcargoinfo_to_home2,bundle);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -157,7 +159,7 @@ public class Addcargoinfo extends Fragment {
                     }
                 });
 
-                navController.navigate(R.id.action_addcargoinfo_to_home2);
+
             }
         });
         return view;

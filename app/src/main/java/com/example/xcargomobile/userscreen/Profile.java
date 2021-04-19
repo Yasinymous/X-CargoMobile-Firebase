@@ -13,6 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.xcargomobile.MainActivity;
 import com.example.xcargomobile.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -76,9 +77,18 @@ public class Profile extends Fragment {
         profile_toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                Intent intent = new Intent(getActivity(),Settings.class);
-                startActivity(intent);
-                return true;
+                String x = item.toString();
+                if (x.equals("Settings")){
+                    Intent intent1 = new Intent(getActivity(),Settings.class);
+                    startActivity(intent1);
+                    return false;
+                }
+                else{
+                    FirebaseAuth.getInstance().signOut();//logout
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+                    return false;
+                }
             }
         });
 

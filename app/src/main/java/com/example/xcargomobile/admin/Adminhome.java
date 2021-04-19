@@ -6,23 +6,35 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 import androidx.fragment.app.Fragment;
-import com.example.xcargomobile.MainActivity;
 import com.example.xcargomobile.R;
-import com.example.xcargomobile.userscreen.Cargoinfo;
-import com.example.xcargomobile.admin.Addcargo;
 
 public class Adminhome extends Fragment {
 
     View myView;
     Button toaddcargo;
-
+    private static final String ARG_PARAM1 = "success";
+    private String mParam1;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+        }
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.addcargohome, container,false);
         Button toaddcargo = (Button) root.findViewById(R.id.toaddcargo);
+
+        if(mParam1!=null && mParam1.equals("success")){
+                Toast.makeText(getActivity(), "Cargo Add Succesfull", Toast.LENGTH_SHORT).show();
+        }
+
+
         toaddcargo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

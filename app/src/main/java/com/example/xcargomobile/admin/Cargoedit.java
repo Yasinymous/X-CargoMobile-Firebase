@@ -20,6 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.annotations.NotNull;
 import com.google.firebase.firestore.*;
 import com.google.firebase.storage.StorageReference;
+import android.content.Intent;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -39,12 +40,17 @@ public class Cargoedit extends AppCompatActivity {
     private FirebaseFirestore fStore;
     private String userID;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cargoedit);
 
-        String cargoid = "b4f194531d4f4f77b98619507ff65950";
+        Intent data = getIntent();
+
+        String cargoid =  data.getStringExtra("cargoid");
+        //System.out.println(cargoid);
 
         sendername = (EditText)findViewById(R.id.sendername);
         senderlastname = (EditText)findViewById(R.id.senderlastname);
@@ -323,6 +329,10 @@ public class Cargoedit extends AppCompatActivity {
 
     public void lock(EditText editText,boolean x){
         editText.setEnabled(x);
+    }
+
+    public String cargoid(String cid){
+        return cid;
     }
 
 

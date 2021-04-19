@@ -31,6 +31,14 @@
                     android:layout_height="wrap_content" android:id="@+id/search_button"
                     android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp" android:layout_marginTop="20dp" android:textAllCaps="false"/>
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="446dp" android:id="@+id/cargolist"
+                    android:layout_marginStart="30dp" android:layout_marginEnd="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="42dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/search_button"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
